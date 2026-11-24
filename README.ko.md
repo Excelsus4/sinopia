@@ -137,7 +137,12 @@ Sinopia 본체는 [`skill/sinopia/`](./skill/sinopia/) 안의 **직접 열어볼
 - [`SKILL.md`](./skill/sinopia/SKILL.md) — 3단계 상담·격리·브리핑 절차, 플랫폼별 격리 매트릭스 및 하드 스톱 규칙
 - [`references/prompt_templates.md`](./skill/sinopia/references/prompt_templates.md) — 언어 중립(`{USER_LANGUAGE}`) 정제 브리프 스키마, 블라인드 전문가 호출 프롬프트, 최종 브리핑 구조
 
-저장소를 클론해 두 파일을 직접 확인한 뒤 로컬 설치 스크립트를 실행합니다:
+**Claude Code**에서는 한 줄로 바로 설치하거나, 저장소를 클론해 두 파일을 직접 확인한 뒤 로컬 설치 스크립트를 실행할 수 있습니다:
+
+```bash
+# Claude Code 원스텝 마켓플레이스 설치 (v2.1.275+)
+/plugin install sinopia --marketplace Excelsus4/sinopia
+```
 
 ```bash
 git clone https://github.com/Excelsus4/sinopia.git && cd sinopia

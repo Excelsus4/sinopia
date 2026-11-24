@@ -1,0 +1,31 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "excelsus4-sinopia",
+  "description": "Sinopia pre-build counsel plugin for Claude Code.",
+  "owner": {
+    "name": "Excelsus4",
+    "url": "https://github.com/Excelsus4"
+  },
+  "plugins": [
+    {
+      "name": "sinopia",
+      "description": "Pre-build counsel: plain-language intake, mirror-back check, and an isolated senior review of a refined brief. Go, Pilot, or No-Go.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Excelsus4",
+        "url": "https://github.com/Excelsus4"
+      },
+      "homepage": "https://github.com/Excelsus4/sinopia",
+      "repository": "https://github.com/Excelsus4/sinopia",
+      "license": "MIT",
+      "keywords": [
+        "pre-build-review",
+        "ai-agents",
+        "claude-code",
+        "prompt-engineering",
+        "agent-skills"
+      ],
+      "source": "./"
+    }
+  ]
+}

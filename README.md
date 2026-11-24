@@ -137,7 +137,12 @@ Everything Sinopia needs lives in [`skill/sinopia/`](./skill/sinopia/) — just 
 - [`SKILL.md`](./skill/sinopia/SKILL.md) — 3-stage intake/isolation/debrief protocol, cross-agent isolation matrix, and hard-stop rules
 - [`references/prompt_templates.md`](./skill/sinopia/references/prompt_templates.md) — language-neutral (`{USER_LANGUAGE}`) Refined Brief schema, Blind Specialist invocation prompt, and Counsel Debrief structure
 
-Clone the repository, inspect both files, and run the local installer:
+Clone the repository, inspect both files, and run the local installer — or install directly inside **Claude Code** from this repository's marketplace manifest:
+
+```bash
+# Claude Code (one-step marketplace install, v2.1.275+)
+/plugin install sinopia --marketplace Excelsus4/sinopia
+```
 
 ```bash
 git clone https://github.com/Excelsus4/sinopia.git && cd sinopia
