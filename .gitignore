@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+*.log
+_claude_brief.txt
+_claude_out.json
+docs/
+AGENTS.md
+.DS_Store
+Thumbs.db
