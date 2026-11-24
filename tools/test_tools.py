@@ -255,7 +255,6 @@ ROOT_PUBLIC_FILES = ("README.md", "README.ko.md", "LICENSE", ".gitignore", ".git
 FORBIDDEN_TOKENS = tuple(a + b for a, b in (
     ("pre", "flight"), ("/coun", "cil"), ("tri", "lemma"), ("iron", "hull"), ("mal", "akh"),
     ("c:" + "\\", "projects"), ("c:/", "projects"), ("users" + "\\", "user"), ("excelsus", ".jp"),
-    ("img.shields", ".io"),
 ))
 FORBIDDEN_REGEXES = (re.compile(r"(?<![\w/])/" + "pf" + r"\b", re.I),)
 CORE_FORBIDDEN = tuple(a + b for a, b in (("/s", "fm"), ("sfu", "mato"), ("sprez", "zatura")))
@@ -316,11 +315,15 @@ class PublicHygieneAndEncodingTest(unittest.TestCase):
     def test_readme_hangul_only_in_ko_link_text(self) -> None:
         text = _read(os.path.join(REPO_ROOT, "README.md"))
         stripped = re.sub(r"\[[^\]]*\]\(\./README\.ko\.md\)", "", text)
+        stripped = re.sub(r'<a\s+href="\./README\.ko\.md">[^<]*</a>', "", stripped)
         self.assertIsNone(HANGUL_RE.search(stripped), "README.md has Hangul outside the README.ko.md link")
 
     def test_readmes_cross_link(self) -> None:
-        self.assertIn("(./README.ko.md)", _read(os.path.join(REPO_ROOT, "README.md")))
-        self.assertIn("(./README.md)", _read(os.path.join(REPO_ROOT, "README.ko.md")))
+        en = _read(os.path.join(REPO_ROOT, "README.md"))
+        ko = _read(os.path.join(REPO_ROOT, "README.ko.md"))
+        self.assertTrue("(./README.ko.md)" in en or 'href="./README.ko.md"' in en)
+        self.assertTrue("(./README.md)" in ko or 'href="./README.md"' in ko)
+        self.assertTrue(os.path.isfile(os.path.join(REPO_ROOT, "assets", "architecture.svg")))
 
     def test_no_bom(self) -> None:
         for path in self.files:

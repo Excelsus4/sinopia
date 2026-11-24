@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 430" width="1120" height="430" role="img" aria-label="Sinopia 3-Stage Pre-Build Counsel Architecture Diagram">
+  <defs>
+    <linearGradient id="bgParchment" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF6EE"/>
+      <stop offset="100%" stop-color="#EFE6D5"/>
+    </linearGradient>
+    <marker id="arrowSepia" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6A5B4B"/>
+    </marker>
+    <marker id="arrowSinopia" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#8E2F21"/>
+    </marker>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2F5D62"/>
+    </marker>
+    <filter id="cardShadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#2B2118" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Parchment Background & Codex Double Frame -->
+  <rect x="0" y="0" width="1120" height="430" rx="10" fill="url(#bgParchment)"/>
+  <rect x="12" y="12" width="1096" height="406" rx="6" fill="none" stroke="#C9B99B" stroke-width="1.5"/>
+  <rect x="17" y="17" width="1086" height="396" rx="4" fill="none" stroke="#DED2BC" stroke-width="0.8"/>
+
+  <!-- Subtle Codex Corner Ornaments -->
+  <g stroke="#B8A482" stroke-width="1" fill="none" opacity="0.8">
+    <path d="M24,36 L24,24 L36,24"/>
+    <path d="M1096,36 L1096,24 L1084,24"/>
+    <path d="M24,394 L24,406 L36,406"/>
+    <path d="M1096,394 L1096,406 L1084,406"/>
+  </g>
+
+  <!-- Header -->
+  <text x="44" y="49" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="bold" fill="#2B2118">
+    Sinopia Architecture: Separating Plain-Language Intake From Senior Review
+  </text>
+  <text x="44" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="12.2" fill="#635647">
+    Sync intake &amp; mirror-back gate · Context wall passing only the refined brief · Isolated specialist review · Grounded debrief &amp; hard stop
+  </text>
+
+  <!-- Stage Labels -->
+  <g font-family="system-ui, sans-serif" font-size="10.2" font-weight="700" fill="#8C7B65" letter-spacing="0.9">
+    <text x="108" y="102" text-anchor="middle">INPUT</text>
+    <text x="334" y="102" text-anchor="middle">STAGE 1 · SYNC INTAKE (MAIN)</text>
+    <text x="530" y="102" text-anchor="middle" fill="#8E2F21">CONTEXT WALL</text>
+    <text x="720" y="102" text-anchor="middle">STAGE 2 · BLIND SPECIALIST (ISOLATED)</text>
+    <text x="984" y="102" text-anchor="middle">STAGE 3 · DEBRIEF</text>
+  </g>
+
+  <!-- INPUT BOX -->
+  <g transform="translate(36, 146)">
+    <rect x="0" y="0" width="144" height="156" rx="7" fill="#FFFDF8" stroke="#8C7B65" stroke-width="1.6" filter="url(#cardShadow)"/>
+    <text x="72" y="27" font-family="Georgia, serif" font-size="13.5" font-weight="bold" fill="#2B2118" text-anchor="middle">Casual Prompt</text>
+    <line x1="16" y1="37" x2="128" y2="37" stroke="#E3D8C5" stroke-width="1"/>
+    <text x="72" y="58" font-family="system-ui, sans-serif" font-size="10.6" fill="#4E4235" text-anchor="middle">"Should I build X?"</text>
+    <text x="72" y="78" font-family="system-ui, sans-serif" font-size="10.6" fill="#4E4235" text-anchor="middle">• Unfamiliar domain</text>
+    <text x="72" y="96" font-family="system-ui, sans-serif" font-size="10.6" fill="#4E4235" text-anchor="middle">• Missing constraints</text>
+    <text x="72" y="114" font-family="system-ui, sans-serif" font-size="10.6" fill="#4E4235" text-anchor="middle">• Workspace docs</text>
+    <text x="72" y="138" font-family="system-ui, sans-serif" font-size="10.2" font-weight="600" fill="#2F5D62" text-anchor="middle">{USER_LANGUAGE}</text>
+  </g>
+
+  <!-- STAGE 1: Intake Counsel & Mirror-Back -->
+  <g transform="translate(214, 118)">
+    <rect x="0" y="0" width="240" height="214" rx="7" fill="#F2F7F7" stroke="#2F5D62" stroke-width="1.6" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="8" height="214" rx="3" fill="#2F5D62"/>
+    <text x="20" y="26" font-family="Georgia, serif" font-size="13.4" font-weight="bold" fill="#1F4246">Intake Counsel</text>
+    <text x="20" y="43" font-family="system-ui, sans-serif" font-size="10.4" font-weight="600" fill="#527073">Main Context · Read-Only Scan</text>
+    <line x1="20" y1="53" x2="224" y2="53" stroke="#CDE0E2" stroke-width="1"/>
+    <text x="20" y="74" font-family="system-ui, sans-serif" font-size="10.7" fill="#2B3F42">1. Pre-scan project docs silently</text>
+    <text x="20" y="95" font-family="system-ui, sans-serif" font-size="10.7" fill="#2B3F42">2. Ask only decision-critical forks</text>
+    <text x="20" y="116" font-family="system-ui, sans-serif" font-size="10.7" fill="#2B3F42">3. Keep design limits; hold tone prefs</text>
+    <rect x="18" y="130" width="206" height="40" rx="5" fill="#FFFFFF" stroke="#2F5D62" stroke-width="1.1"/>
+    <text x="121" y="147" font-family="system-ui, sans-serif" font-size="10.4" font-weight="700" fill="#1F4246" text-anchor="middle">Mirror-Back Confirmation Gate</text>
+    <text x="121" y="162" font-family="system-ui, sans-serif" font-size="9.8" fill="#527073" text-anchor="middle">3-6 plain bullets → user confirms</text>
+    <text x="20" y="191" font-family="system-ui, sans-serif" font-size="10.4" font-weight="600" fill="#8E2F21">4. Distill refined Brief + whole reread</text>
+    <text x="20" y="205" font-family="system-ui, sans-serif" font-size="9.6" fill="#635647">0 raw quotes · 0 meta-framing · 0 tokens</text>
+  </g>
+
+  <!-- CONTEXT WALL (Vertical dashed barrier + Refined Brief pill) -->
+  <line x1="530" y1="112" x2="530" y2="338" stroke="#B83B2A" stroke-width="2" stroke-dasharray="6,4" opacity="0.85"/>
+  <g transform="translate(476, 174)">
+    <rect x="0" y="0" width="108" height="98" rx="6" fill="#FDF5F3" stroke="#8E2F21" stroke-width="1.8" filter="url(#cardShadow)"/>
+    <text x="54" y="21" font-family="Georgia, serif" font-size="11.4" font-weight="bold" fill="#8E2F21" text-anchor="middle">Refined Brief</text>
+    <text x="54" y="34" font-family="system-ui, sans-serif" font-size="9.4" font-weight="700" fill="#B83B2A" text-anchor="middle">ONLY CROSSES</text>
+    <line x1="12" y1="42" x2="96" y2="42" stroke="#E8C6BF" stroke-width="1"/>
+    <text x="54" y="56" font-family="system-ui, sans-serif" font-size="9.4" fill="#4A2A25" text-anchor="middle">• Verified Facts</text>
+    <text x="54" y="69" font-family="system-ui, sans-serif" font-size="9.4" fill="#4A2A25" text-anchor="middle">• Anti-Goals</text>
+    <text x="54" y="82" font-family="system-ui, sans-serif" font-size="9.4" fill="#4A2A25" text-anchor="middle">• Explicit Unknowns</text>
+    <text x="54" y="94" font-family="system-ui, sans-serif" font-size="9.4" fill="#4A2A25" text-anchor="middle">• Failure Modes</text>
+  </g>
+
+  <!-- Held Back / Private Delivery Channel (Bottom bypass arrow Stage 1 -> Stage 3) -->
+  <path d="M334,332 L334,368 L984,368 L984,336" fill="none" stroke="#6A5B4B" stroke-width="1.4" stroke-dasharray="4,3" marker-end="url(#arrowSepia)"/>
+  <g transform="translate(566, 349)">
+    <rect x="0" y="0" width="290" height="36" rx="5" fill="#FAF6EE" stroke="#C9B99B" stroke-width="1.1"/>
+    <text x="145" y="15" font-family="system-ui, sans-serif" font-size="9.8" font-weight="700" fill="#5C4E3F" text-anchor="middle">PRIVATE CHANNEL (BYPASSES STAGE 2)</text>
+    <text x="145" y="29" font-family="system-ui, sans-serif" font-size="9.5" fill="#635647" text-anchor="middle">Original intent · Delivery density prefs ("explain simply")</text>
+  </g>
+
+  <!-- STAGE 2: Blind Specialist (Isolated Fresh Context) -->
+  <g transform="translate(606, 118)">
+    <rect x="0" y="0" width="232" height="214" rx="7" fill="#FDF5F3" stroke="#8E2F21" stroke-width="1.8" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="8" height="214" rx="3" fill="#8E2F21"/>
+    <text x="20" y="26" font-family="Georgia, serif" font-size="13.4" font-weight="bold" fill="#8E2F21">Blind Specialist</text>
+    <text x="20" y="43" font-family="system-ui, sans-serif" font-size="10.3" font-weight="600" fill="#B83B2A">Fresh Read-Only Subagent (No Fork)</text>
+    <line x1="20" y1="53" x2="216" y2="53" stroke="#E8C6BF" stroke-width="1"/>
+    <text x="20" y="74" font-family="system-ui, sans-serif" font-size="10.6" fill="#4A2A25">• Senior-peer rigor (zero chat history)</text>
+    <text x="20" y="95" font-family="system-ui, sans-serif" font-size="10.6" fill="#4A2A25">• 1:1 Failure-Mode Defense Matrix</text>
+    <text x="20" y="116" font-family="system-ui, sans-serif" font-size="10.6" fill="#4A2A25">• If-Then branches for Unknowns</text>
+    <text x="20" y="137" font-family="system-ui, sans-serif" font-size="10.1" fill="#4A2A25">• Flags [External Validation Required]</text>
+    <text x="20" y="158" font-family="system-ui, sans-serif" font-size="10.6" fill="#4A2A25">• Verifiable Pre-Execution QA Gates</text>
+    <rect x="18" y="172" width="198" height="30" rx="5" fill="#FFFDF8" stroke="#D9A89F" stroke-width="1"/>
+    <text x="117" y="191" font-family="system-ui, sans-serif" font-size="9.8" font-weight="600" fill="#8E2F21" text-anchor="middle">Isolation fails? Stop — no fake fallback</text>
+  </g>
+
+  <!-- STAGE 3: Grounded Debrief & Hard Stop -->
+  <g transform="translate(876, 118)">
+    <rect x="0" y="0" width="210" height="214" rx="7" fill="#FFFDF8" stroke="#3E2F23" stroke-width="1.8" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="210" height="44" rx="7" fill="#8E2F21"/>
+    <rect x="0" y="34" width="210" height="10" fill="#8E2F21"/>
+    <text x="105" y="21" font-family="Georgia, serif" font-size="13.2" font-weight="bold" fill="#FAF6EE" text-anchor="middle">Grounded Debrief</text>
+    <text x="105" y="36" font-family="system-ui, sans-serif" font-size="9.8" fill="#F5D3CE" text-anchor="middle">Conclusion-First · {USER_LANGUAGE}</text>
+    <text x="16" y="66" font-family="system-ui, sans-serif" font-size="10.6" font-weight="700" fill="#2B2118">✓ Go / Conditional / Pilot / No-Go</text>
+    <text x="16" y="87" font-family="system-ui, sans-serif" font-size="10.4" fill="#4E4235">• Bidirectional intent &amp; drift audit</text>
+    <text x="16" y="106" font-family="system-ui, sans-serif" font-size="10.4" fill="#4E4235">• Top traps &amp; concrete defenses</text>
+    <text x="16" y="125" font-family="system-ui, sans-serif" font-size="10.4" fill="#4E4235">• Minimal pilot &amp; QA pass gates</text>
+    <text x="16" y="144" font-family="system-ui, sans-serif" font-size="10.4" fill="#4E4235">• Matched to your reading level</text>
+    <line x1="16" y1="154" x2="194" y2="154" stroke="#E3D8C5" stroke-width="1"/>
+    <text x="105" y="172" font-family="system-ui, sans-serif" font-size="10.3" font-weight="700" fill="#2F5D62" text-anchor="middle">HARD STOP (READ-ONLY)</text>
+    <text x="105" y="188" font-family="system-ui, sans-serif" font-size="9.6" fill="#635647" text-anchor="middle">0 file edits · 0 plan files · 0 commits</text>
+    <text x="105" y="202" font-family="system-ui, sans-serif" font-size="9.6" fill="#635647" text-anchor="middle">You choose: Build · Pilot · Reframe · Drop</text>
+  </g>
+
+  <!-- Main Flow Arrows -->
+  <line x1="180" y1="224" x2="210" y2="224" stroke="#2F5D62" stroke-width="1.8" marker-end="url(#arrowTeal)"/>
+  <line x1="454" y1="224" x2="472" y2="224" stroke="#8E2F21" stroke-width="1.8" marker-end="url(#arrowSinopia)"/>
+  <line x1="584" y1="224" x2="602" y2="224" stroke="#8E2F21" stroke-width="1.9" marker-end="url(#arrowSinopia)"/>
+  <line x1="838" y1="224" x2="872" y2="224" stroke="#8E2F21" stroke-width="1.9" marker-end="url(#arrowSinopia)"/>
+</svg>
