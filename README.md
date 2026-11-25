@@ -211,13 +211,14 @@ python3 -m unittest tools/test_tools.py -v
 
 ## 🧩 Companion Tools & Design Lineage
 
-Sinopia is part of a lightweight **Renaissance Craft Trio** of zero-dependency agent skills — each applying strict context boundaries to a different stage of building:
+Sinopia is part of a lightweight **Renaissance Craft Quartet** of zero-dependency agent skills — each applying strict context boundaries to a different stage of building:
 
 | Tool | Stage | Isolation Axis | Focus |
 |---|---|---|---|
-| **Sinopia** *(this repo)* | **Pre-build** | Vertical *(register isolation)* | Plain-language intake + isolated senior review of a refined brief |
-| **[Sfumato](https://github.com/Excelsus4/sfumato)** | **Divergence** | Horizontal *(domain isolation)* | Dual-track cross-domain ideation breaking LLM homogenization |
-| **[Sprezzatura](https://github.com/Excelsus4/sprezzatura)** | **Post-build QA** | Cluster *(evidence isolation)* | Read-only fault-cluster audit catching bugs that pass local tests |
+| **Sinopia** (`/snp`, *this repo*) | **Pre-build** | Vertical *(register isolation)* | Plain-language intake + isolated senior review of a refined brief |
+| **[Sfumato](https://github.com/Excelsus4/sfumato)** (`/sfm`) | **Divergence** | Horizontal *(domain isolation)* | Dual-track cross-domain ideation breaking LLM homogenization |
+| **[Senato](https://github.com/Excelsus4/senato)** (`/snt`) | **Arbitration** | Stakeholder *(evidence isolation)* | Multi-seat trade-off deliberation with asymmetric evidence & preserved dissent |
+| **[Sprezzatura](https://github.com/Excelsus4/sprezzatura)** (`/spz`) | **Post-build QA** | Cluster *(evidence isolation)* | Read-only fault-cluster audit catching bugs that pass local tests |
 
 Licensed under the [MIT License](./LICENSE).
 
